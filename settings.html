@@ -1,0 +1,24 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AgroMind — Settings</title><meta name="description" content="Units, theme, accent and data backup.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body>
+<div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:26px"><div class="eyebrow">Preferences</div><h1><em>Settings</em>.</h1></section>
+  <div class="grid2 even">
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Appearance</h2></div>
+        <div class="setrow"><div><div class="si">Theme</div><div class="sd">Dark or light.</div></div><button class="toggle" id="themeToggle"></button></div>
+        <div class="setrow"><div><div class="si">Accent</div><div class="sd">Recolors the UI and the 3D field.</div></div><div class="accents" id="accents2"></div></div>
+        <div class="setrow"><div><div class="si">Units</div><div class="sd">Metric (cm, °C) or imperial (in, °F).</div></div><button class="toggle" id="unitToggle"></button></div>
+      </section>
+    </div>
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Data</h2></div>
+        <div class="setrow"><div><div class="si">Export</div><div class="sd">Journal, plan & prefs as JSON.</div></div><button class="ghost" id="exp" data-press>Export</button></div>
+        <div class="setrow"><div><div class="si">Import</div><div class="sd">Restore from a backup.</div></div><button class="ghost" id="imp" data-press>Import</button></div>
+        <div class="setrow"><div><div class="si" style="color:var(--rose)">Reset</div><div class="sd">Clear journal and plan.</div></div><button class="ghost" id="reset" data-press style="border-color:var(--rose);color:var(--rose)">Reset</button></div>
+        <input type="file" id="impf" accept="application/json" style="display:none">
+      </section>
+    </div>
+  </div>
+  <section class="card reveal" style="margin-top:22px"><div class="ch"><h2>About & features</h2></div><div style="padding:20px"><p style="color:var(--ink2);line-height:1.7;margin-bottom:12px">AgroMind is a fully client-side agronomy platform. Crop data and calculators run offline; weather uses the free open-meteo API. Nothing is uploaded.</p><div class="feat" id="featlist" style="text-align:left;margin:0"></div></div></section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

@@ -1,0 +1,12 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AgroMind — Crops</title><meta name="description" content="A searchable library of 18 crops with spacing, season, pH, companions and growing notes.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body>
+<div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:26px"><div class="eyebrow">Crop library</div><h1>Know your <em>crops</em>.</h1></section>
+  <div class="row" style="margin-bottom:22px">
+    <div class="inp" style="flex:1;min-width:200px;display:flex;align-items:center;gap:10px;padding:0 14px"><span style="color:var(--mut)"></span><input id="q" placeholder="Search crops or family…" style="border:none;background:transparent;outline:none;flex:1;padding:12px 0;color:var(--ink)"></div>
+    <select class="inp" id="filter" style="width:auto"><option value="all">All seasons</option><option value="Cool">Cool-season</option><option value="Warm">Warm-season</option></select>
+    <span class="k" id="cnt" style="font-family:var(--mono);font-size:12px;color:var(--mut)"></span>
+  </div>
+  <div id="list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px"></div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

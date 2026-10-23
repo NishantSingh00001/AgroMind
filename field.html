@@ -1,0 +1,24 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AgroMind — Field & Weather</title><meta name="description" content="Live weather with planting advice, plus a field journal for your plots.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body>
+<div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:26px"><div class="eyebrow">Field & weather</div><h1>Read the <em>sky</em>.</h1></section>
+  <div class="grid2">
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Weather</h2><span class="k">open-meteo · live</span></div><div style="padding:20px">
+        <div class="row" style="margin-bottom:16px"><input class="inp" id="wxin" placeholder="Enter a town or city…" style="flex:1;min-width:180px"><button class="btn primary" id="wxgo" data-press>Get forecast</button></div>
+        <div id="wxbox"><div class="empty">Enter a place to see current weather and a 7-day forecast.</div></div>
+      </div></section>
+      <section class="card reveal"><div class="ch"><h2>Advice</h2></div><div style="padding:20px" id="advice"><div class="empty">Load weather for tailored planting & watering advice.</div></div></section>
+    </div>
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Field journal</h2></div><div style="padding:20px">
+        <div class="fld" style="margin-top:0"><label>Plot name</label><input class="inp" id="jplot" placeholder="North bed"></div>
+        <div class="row"><div class="fld" style="flex:1;min-width:120px"><label>Crop</label><select class="inp" id="jcrop"></select></div><div class="fld" style="flex:1;min-width:120px"><label>Status</label><select class="inp" id="jstatus"><option>Sown</option><option>Growing</option><option>Flowering</option><option>Harvesting</option><option>Done</option></select></div></div>
+        <div class="fld"><label>Note</label><input class="inp" id="jnote" placeholder="Thinned seedlings, watered…"></div>
+        <button class="save" data-press id="jadd" style="margin-top:16px">Log plot</button>
+        <div style="margin-top:20px" id="journal"></div>
+      </div></section>
+    </div>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

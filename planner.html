@@ -1,0 +1,13 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AgroMind — Planner</title><meta name="description" content="Month-by-month sow, transplant and harvest calendar plus a bed spacing calculator.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body>
+<div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:26px"><div class="eyebrow">Season planner</div><h1>Plan the <em>year</em>.</h1></section>
+  <section class="card reveal" style="margin-bottom:22px"><div class="ch"><h2>Your crops</h2></div><div style="padding:18px"><div class="chips" id="pick"></div></div></section>
+  <section class="card reveal" style="margin-bottom:22px"><div class="ch"><h2>Planting calendar</h2><span class="k legend"><span><i style="background:color-mix(in srgb,var(--acc) 60%,transparent)"></i>Sow</span><span><i style="background:color-mix(in srgb,var(--amb) 60%,transparent)"></i>Transplant</span><span><i style="background:color-mix(in srgb,var(--acc2) 70%,transparent)"></i>Harvest</span></span></div><div style="padding:20px;overflow-x:auto" id="plan"></div></section>
+  <section class="card reveal"><div class="ch"><h2>Bed spacing</h2></div><div style="padding:20px"><div class="row">
+    <div class="fld" style="margin:0;flex:1;min-width:120px"><label>Bed length (m)</label><input class="inp" id="bl" type="number" value="3" min="0"></div>
+    <div class="fld" style="margin:0;flex:1;min-width:120px"><label>Bed width (m)</label><input class="inp" id="bw" type="number" value="1.2" min="0"></div>
+    <div class="fld" style="margin:0;flex:1;min-width:140px"><label>Crop</label><select class="inp" id="bc"></select></div>
+  </div><div style="margin-top:20px;font-family:var(--disp);font-weight:800;font-size:40px" id="scOut"></div><div style="color:var(--mut);font-family:var(--mono);font-size:12px" id="scNote"></div></div></section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
